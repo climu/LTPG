@@ -1,0 +1,22 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AW[cb][cc][bd][ac][dd][gg]AB[be][ce][cd][dc][ec][db]C[White jsut cut you with his D6 stone, hoping to split your groups. Capture his stone to stay connected.]
+(;B[ed];W[de]
+(;B[df];W[ee];B[fe];W[ef];B[eg];W[ff]
+(;B[gf]
+;W[fg]C[No, the ladder does not work for you. White can connect to his other stone.])
+(;B[fg]
+;W[gf]C[No, the ladder does not work for you. White can connect to his other stone.]))
+(;B[ee]
+;W[df]C[Can't kill white now.]))
+(;B[de];W[ed]
+(;B[fd];W[ee];B[ef];W[fe];B[ge]
+;W[ff]C[No, the ladder does not work for you.]
+(;B[fg]
+;W[gf]C[No, the ladder does not work for you. White can connect to his other stone.])
+(;B[gf]
+;W[fg]C[No, the ladder does not work for you. White can connect to his other stone.]))
+(;B[ee]
+;W[fd]C[Can't kill white now.]))
+(;B[ee];W[ed];B[fd]
+;W[de]TE[1];B[df]TE[1]C[Oh yeah. You do not have to take away a liberty right away. Just 
+take away the possible escape routes. The capture itself can wait 
+for a bit. Patience!]))

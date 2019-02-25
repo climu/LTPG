@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| Placing the Stones</div>
+      <div class="podnadpis">This is NOT a Tic-tac-toe</div><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+
+<!-- FLAVOUR -->
+<div class="flavour"><hr>So you decided to try and learn the game you will actually NEVER be good at? Fine. Your choice. I&nbsp;made the same mistake after all. And in all honesty, it has been a lot of fun. Let me try to get you off to a good start :) Also, I have hidden some secrets here, to keep it fun, be on your guard. <br><hr></div>
+<!-- END OF FLAVOUR -->    
+
+    <div class="text" style="">
+
+
+<!-- RULES -->
+<div class="podnadpis2">The stones are played on the <span class="black">intersections</span>, not in the "boxes".</div><br>  
+<div class="podnadpis2"><span class="black">Black</span> plays first (this is not chess).</div><br>
+<div class="podnadpis2">After that black and white take turns <span class="black">equally</span>.</div><br>
+<div class="podnadpis2">Once a stone is played it cannot be moved. It can only be removed by getting <span class="black">captured</span>.</div><br><br><br>
+    
+Got it? It's not hard, right? Feel free to test out a few moves (for both black and white), you are now already almost good to play! We will talk about capturing in the next chapter.<br><br><br><br>
+<!-- END OF RULES -->
+
+
+
+<!-- BOARD -->
+
+<center><div id="board"></div></center><br><br>
+
+<script type="text/javascript" src="dist/jgoboard-latest.js"></script>
+<script type="text/javascript" src="large/board.js"></script>
+<script type="text/javascript">
+var updateCaptures = function (node) {
+  document.getElementById('black-captures').innerText = node.info.captures[JGO.BLACK];
+  document.getElementById('white-captures').innerText = node.info.captures[JGO.WHITE];
+};
+var jrecord = new JGO.Record(9);
+var jboard = jrecord.jboard;
+var jsetup = new JGO.Setup(jboard, JGO.BOARD.largeWalnut);
+var player = JGO.BLACK; // next player
+var ko = false, lastMove = false; // ko coordinate and last move coordinate
+var lastHover = false, lastX = -1, lastY = -1; // hover helper vars
+
+jboard.setType(JGO.util.getHandicapCoordinates(jboard.width, 0), JGO.BLACK);
+
+jsetup.setOptions({stars: {points:5}});
+jsetup.create('board', function(canvas) {
+  canvas.addListener('click', function(coord, ev) {
+    var opponent = (player == JGO.BLACK) ? JGO.WHITE : JGO.BLACK;
+
+
+
+    // clear hover away - it'll be replaced or then it will be an illegal move
+    // in any case so no need to worry about putting it back afterwards
+    if(lastHover)
+      jboard.setType(new JGO.Coordinate(lastX, lastY), JGO.CLEAR);
+
+    lastHover = false;
+
+    var play = jboard.playMove(coord, player, ko);
+
+    if(play.success) {
+      node = jrecord.createNode(true);
+      node.info.captures[player] += play.captures.length; // tally captures
+      node.setType(coord, player); // play stone
+      node.setType(play.captures, JGO.CLEAR); // clear opponent's stones
+
+      if(lastMove)
+        node.setMark(lastMove, JGO.MARK.NONE); // clear previous mark
+      if(ko)
+        node.setMark(ko, JGO.MARK.NONE); // clear previous ko mark
+
+      node.setMark(coord, JGO.MARK.CIRCLE); // mark move
+      lastMove = coord;
+
+      if(play.ko)
+        node.setMark(play.ko, JGO.MARK.CIRCLE); // mark ko, too
+      ko = play.ko;
+
+      player = opponent;
+      updateCaptures(node);
+    } else alert('Illegal move: ' + play.errorMsg);
+  });
+
+  canvas.addListener('mousemove', function(coord, ev) {
+    if(coord.i == -1 || coord.j == -1 || (coord.i == lastX && coord.j == lastY))
+      return;
+
+    if(lastHover) // clear previous hover if there was one
+      jboard.setType(new JGO.Coordinate(lastX, lastY), JGO.CLEAR);
+
+    lastX = coord.i;
+    lastY = coord.j;
+
+    if(jboard.getType(coord) == JGO.CLEAR && jboard.getMark(coord) == JGO.MARK.NONE) {
+      jboard.setType(coord, player == JGO.WHITE ? JGO.DIM_WHITE : JGO.DIM_BLACK);
+      lastHover = true;
+    } else
+      lastHover = false;
+  });
+
+  canvas.addListener('mouseout', function(ev) {
+    if(lastHover)
+      jboard.setType(new JGO.Coordinate(lastX, lastY), JGO.CLEAR);
+
+    lastHover = false;
+  });
+});
+</script>
+
+<div class="alert">But is it not unfair, that black gets the first move? It sure is! To make up for this advantage, white gets several points extra from the start (called komi). <br>It is usually 6,5 points on the 19x19 board and only 5,5 on 9x9. The half points is to prevent ties.</div><br><br>
+
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#rules');setCookie('1', '1', '14')">EZ, <span class="black"> I got this, </span>what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>

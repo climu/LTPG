@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+    
+	<script type="text/javascript" src="wgo/wgo.js"></script>
+	<script type="text/javascript" src="wgo/kifu.js"></script>
+	<script type="text/javascript" src="wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="wgo/player.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.component.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.infobox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.commentbox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
+	<script type="text/javascript" src="wgo/player.editable.js"></script>
+	<script type="text/javascript" src="wgo/scoremode.js"></script>
+	<script type="text/javascript" src="wgo/player.permalink.js"></script>
+  <script type="text/javascript" src="tsumego.js"></script>
+    <script type="text/javascript" src="js/tsumegos.js"></script>
+	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+    
+    
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| Immortal groups</div>
+      <a href="https://youtu.be/I_izvAbhExY" target="blank"><div class="podnadpis">Staying alive!</div><a><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+    
+<!-- FLAVOUR -->
+<div class="flavour"><hr>This will probably be the last "complicated" thing to get used to, but it is the last "basic knowledge" thing. You should try to fully understand this. Some might say that it belongs to the rules, but I think it is rather just a logical extension of the rules.<hr></div>
+<!-- END OF FLAVOUR -->
+
+
+    <div class="text" style="">
+<!-- RULES -->
+<b>It is quite natural that there comes a point where a group of connected stones becomes impossible to capture. With really big groups you usually do not have to worry about it as it is unthinkable that something so big could get fully 
+surrounded without capturing some of the opponent's stones first, but with smaller groups, there often comes a time when you have to ask yourself, is this really safe?</b><br><br><br>
+
+The most basic thing about living groups you will hear everywhere is two eyes, <b>two eyes, two eyes!</b> What does it mean? Why does everyone love two eyes so much? It is simple. Thanks to the suicide/capture
+ rule, there can never be a stone on the board that has no liberties. And that by turn means, that a group that has at least 2 eyes is utterly impossible to capture (unless you fill the eye yourself).<br><br>
+
+<div class="podnadpis2"></span>A group with <span class="black">two separate eyes</span> is impossible to capture.</div><br>
+ 
+Check it out. Black is COMPLETELY surrounded in the center of the board. Only two liberties left. It is white's turn. And black is laughing.<br><br><br>
+
+
+ <img src="images/eyes.jpg" alt="counting.jpg, 129kB" title="counting" border="0" height="466" width="464"><br><br>
+
+ Imaging trying to capture black. You can't. You can't play at A because it would be a suicide.
+You can't play at B to take away a liberty, because it would be a suicide. You can't play two moves at once, because that would be cheating. There is nothing you can do to that black group. Only if it were one eye, you can fill that if you 
+capture with that move. But not like this. Even if black does not respond at all he/she cannot be captured.<br><br>
+
+Does that mean that you have to create two eyes like this for every group? No. But you should make sure that each of your group has the <b>possibility</b> of creating <b>two real eyes</b> should things turn nasty. Did you notice how I said
+real eyes? Yeah. It will be more clear after you study the examples, but (although it may sound obvious) you really need to make sure that the eyes are well connected to the rest of the group. If part of the eye can be captured, 
+then the whole group will collapse.<br><br><br> 
+
+
+<!-- TSUMEGOS -->
+
+<div style="text-align: center; min-height: 750px; vertical-align: top;">
+<button class="bttn-selected" onclick="loadTsumego('puzzle5', 'pzl1')" id="pzl1">Puzzle 1</button>
+<button class="bttn" onclick="loadTsumego('puzzle6', 'pzl2')" id="pzl2">Puzzle 2</button>
+<button class="bttn" onclick="loadTsumego('puzzle8', 'pzl3')" id="pzl3">Puzzle 3</button>
+<button class="bttn" onclick="loadTsumego('puzzle7', 'pzl4')" id="pzl4">Puzzle 4</button>
+<br><br>
+<div class="tsumego" id="tsumego_wrapper" style="text-align: left;">
+
+Your browser sucks. Download something up to date.
+</div>
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgfFile: "puzzles/puzzle5.sgf",
+	/*debug: true, /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+</div>
+
+<!-- END OF TSUMEGOS -->
+
+So yeah, that's it. You have to remember, that the "eye" needs to be connected to your group (duh). If it can be captured separately from the rest of the group, it will not save you. We call such an eye a "false eye".
+<br><br><br>
+
+<div class="alert">
+Before trying to kill a group by taking away the eyes, you need to make sure that it is safely surrounded and cannot escape. Otherwise you just wasted a move and gave your opponent a free prisoner if he/she manages to break out and live.
+ 
+
+</div><br><br> 
+<!-- END OF RULES -->
+
+
+
+
+
+  <br><br><br><br>
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#techniques');setCookie('6', '1', '14')">EZ <span class="black">, I got this</span>, what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>

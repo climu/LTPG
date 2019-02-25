@@ -1,0 +1,13 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]C[Cutting onto 2nd line can be tricky though. White just cut you, keep your stones connected somehow.]AB[ce][bd]AW[cd][dd][be]
+(;B[bf];W[ae]
+(;B[ad];W[bc]
+;B[af]TE[1]C[Exactly. Stones so close to the edge have nowhere to run to gain 
+more liberties.])
+(;B[af];W[bc]
+(;B[ad]TE[1]C[Exactly. Stones so close to the edge have nowhere to run to gain 
+more liberties.])
+(;B[ac];W[ad]
+;B[bd]C[Very clever! Snapback.]TE[1])))
+(;B[cf];W[bc];B[bf];W[ad])
+(;B[bc]
+;W[cf]C[This black stone will be captured. Try another way]))

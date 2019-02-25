@@ -1,0 +1,6 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AW[hc][hd][he][hf][id][gg][gh][ii][gi][hi][fg][eg][ih]AB[ha][hb][ib][fb][gc][gd][ge][gf][hh][hg][ig][ic]C[Capture the white stones at the right. Note that white has 2 liberties and black only 1. By all logic white will capture first...]
+(;B[ie];W[if])
+(;B[if]
+;W[ie]C[And indeed she does.];B[hg];W[ig]
+;B[if]TE[1]C[But black captures better.
+So cool.]))

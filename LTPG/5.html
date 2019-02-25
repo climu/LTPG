@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+    
+	<script type="text/javascript" src="wgo/wgo.js"></script>
+	<script type="text/javascript" src="wgo/kifu.js"></script>
+	<script type="text/javascript" src="wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="wgo/player.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.component.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.infobox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.commentbox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
+	<script type="text/javascript" src="wgo/player.editable.js"></script>
+	<script type="text/javascript" src="wgo/scoremode.js"></script>
+	<script type="text/javascript" src="wgo/player.permalink.js"></script>
+	<script type="text/javascript" src="tsumego.js"></script>
+	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+
+	<style>
+	.player {
+		width: 60%;
+		margin: 0;
+	}
+	@media screen and (orientation:portrait) {
+	    .player {
+			width: 100%;
+		}
+	}
+	</style>
+  
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+    
+    
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| Passing & Counting</div>
+      <div class="podnadpis">This is the end</div><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+    
+<!-- FLAVOUR -->
+<div class="flavour"><hr>This is the last stop. The last thing preventing you from playing a complete game of Go. I am proud of you. It may seem insignificant, but you are THIS close to learning possibly the most complex game a human race knows. I mean you suck at playing it, but at least you almost know the rules...<hr></div>
+<!-- END OF FLAVOUR -->
+
+
+    <div class="text" style="">
+
+
+
+
+
+<!-- RULES -->
+<b>The end to the game of Go is not that straightworward as say Chess. The game ends, when both players feel there is nothing more to gain.</b><br><br><br>
+<div class="podnadpis2"></span>Each player has the right to <span class="black">pass</span> (literally say pass) instead of placing a stone.</div><br>
+<div class="podnadpis2"></span>If both player pass <span class="black">consecutively</span>, the game is over and we count the score.</div><br><br>
+
+Yes, you got it right. The game ends only when neither player wants to play further. Then, each player gets: <br><br><b>1 point for every:<br><br>
+- Empty intersection surrounded by stones of his/her color (so be carefull not to play inside your own territory, unless you have to)<br>
+- stone he/she captured. AND stones that remained in his/her territory and have no chance of surviving<br><br>
+</b>
+
+
+That sounds easy, but it is also easy to screw it up. So before you pass you should make sure that the game is actually over. That means there is no move that could bring any points. Most notably: 
+
+<br><br>
+
+<!-- TSUMEGOS -->
+<div style="text-align: center;">
+<div class="tsumego" id="tsumego_wrapper" style="text-align: left;">
+Your browser sucks. Download something up to date.
+</div>
+
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgf: "(;FF[4]GM[1]VW[aa:jj]SZ[9]ST[2]EV[N° 1 .|. Level #2]AB[ff][dc][eb][ec][dd][cd][de][df][dg][dh][eh][fi]AW[fb][fc][fd][ee][ge][ef][eg][fh][gi][fg]C[Make sure there is no stone in atari (danger of immediate capute).](;B[ei];W[gh]C[Very good. Then make sure that all the borders are clearly defined. There should be no place where the border is still open. Only territory that is FULLY surrounded can be counted.](;B[ea];W[fa]C[Not perfect, but good enough. The game is now ready to be scored. But you could have played better (Playing F9 would be an extra point).]TE[1])(;B[fa];W[ga]C[Now there is a stone in atari again. Fix it.];B[ea];W[gb]C[Great! Now the game is ready to be scored. And you played all the right moves.]TE[1]))(;B[gh];W[ei]C[Oooops, well that did not go so well. Better try again.]))",
+	/*debug: true, /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+</div>
+<br><br>
+<!-- END OF TSUMEGOS -->
+Lets say we ended like this, then both players passed:<br><br><br>
+<img src="images/counting.jpg" alt="counting.jpg, 129kB" title="counting" border="0" height="466" width="464"><br><br>
+First question is: <b>What about that lone stone in what we assume is white's territory?</b> Well, that sone is dead. There is now no way for black to save that stone and white could capture it if she/he needed to.  White now adds that stone to her/his prisoners (remember +1 point for each prisoner)<br><br>
+
+<div class="podnadpis2"></span>You <span class="black">do not</span> have to actually capture every last dead stone in your territory. It will be counted as a prisoner anyway.</div><br>
+<div class="podnadpis2"></span>Playing inside your own territory when you do not need to <span class="black">costs you</span> a point (only empty intersections count for points).</div><br>
+How do I know that one stone is dead?<br><br>
+Admitadely, This comes a little bit with experience. Any seasoned Go player can very quickly see the few possible variations and that they lead nowhere. Sometimes it can be tricky, but this is a simple case. Look for these red flags:<br><br>
+
+<b>- It is only one or small handfull of stones.<br>
+- It is not surrounding any territory (this is a big tell!)<br>
+- All around are opponent's well connected stones and your stone is looking sad</b><br><br>
+
+If you are not sure if a stone is or isn't dead, well then do not pass, play it out, until it is obvious. But we will talk about alive/dead groups more soon, so do not get too anxious if you do not see it.<br><br> 
+
+Now we only count the <b>empty</b> spaces that are <b>fully</b> surrounded by stones of one color, and that's it.<br>Let me help you with that:<br><br>
+<img src="images/counting.2jpg.jpg" alt="counting.2jpg.jpg, 162kB" title="counting.2jpg" border="0" height="466" width="464">
+<br><br>
+That one space in the middle? Does not count for either color. Remember only territory fully surrounded by <b>one</b> color can be counted. In real game one of the players would just fill it with a stone, so it would not get in the way. On the internet you do not have to.<br><br>
+So, who do you think won? Say it was an ordinary game and apart from the one black stone there were no captures.<br> <center><button onclick="guess('counting', 'counting3', '2')" class="bttn" id="btn1">Pretty sure black won</button><button class="bttn" onclick="guess('counting2', 'counting4', '1')" id="btn2">I am convinced it is white, who was victorious</button></center>
+<br>
+<div id="counting" style="display: none;"><b>Wrong, tricked you (shame on me)! You were not reading carefully! Remember komi? White always gets extra points to compensate black's first move (5,5 points on 9x9 board). <br><br> Black has 29 points of territory. White has 24 points of territory +1 capture +5,5 komi. White wins.</b></div>
+<div id="counting2" style="display: none;"><b>Very nice! You make me proud! You remembered komi? White always gets extra points to compensate black's first move (5,5 points on 9x9 board).<br><br> Black has 29 points of territory. White has 24 points of territory +1 capture +5,5 komi. White wins.</b></div>
+<div id="counting3" style="display: none;"><b>What? You already did this! how can you fail it now? You do know the concept of 50/50, right? :P</b></div>
+<div id="counting4" style="display: none;"><b>Well, yeah, was it easier this time? :P</b></div><br>
+
+Luckily for us who play online, the computer counts it for us :).<br><br>
+
+<div class="alert">And here comes the curveball. But I had to tell you sooner or later. These things I just taught you apply for Japanese scoring... Yeah. Go has several rulesets and Japanese are arguably the most popular in Western Europe. 
+Does that mean you cannot play with someone who was taught Chinese scoring? Luckily, no! All the basic principles are the same, and unless you played something very weird the result will be same as well. So it almost does not matter what rules you know. And if I were you I would not bother with them right now.<br><br>
+But if you are really, really curious about the differences, you can check them out <u>here</u>  
+
+</div><br><br> 
+<!-- END OF RULES -->
+
+
+
+
+
+  <br><br><br><br>
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#rules');setCookie('5', '1', '14')">EZ, <span class="black">I got this, </span>what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>

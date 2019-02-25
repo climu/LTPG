@@ -1,0 +1,34 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]C[Doesn't have to be a single stone either. Capture the five white stones. Be carefull, it is a little trickier then before.]AW[de][ee][fe][fd][ec][ef]AB[ed][dd][ce][df][ff][fc][eg][fg]
+(;B[ge];W[gd];B[hd];W[gc]
+(;B[gb]
+;W[fb]C[Ooops, you ataried yourself.])
+(;B[fb];W[cd];B[dc];W[cf]
+(;B[dg]
+;W[be]C[White is out.])
+(;B[be]
+;W[dg]C[White is out])))
+(;B[gd];W[ge];B[he];W[gf]
+(;B[gg];W[hf]
+(;B[hg];W[if]
+(;B[ig];W[ie]
+;B[id]TE[1])
+(;B[ie];W[ig]
+;B[ih]TE[1]))
+(;B[if];W[hg];B[hh];W[ig]
+;B[ih]TE[1]))
+(;B[hf];W[gg]
+(;B[hg]
+;W[gh]C[White will get out. Three liberties now.])
+(;B[gh];W[hg]
+(;B[ig];W[hh]
+(;B[hi];W[ih]
+;B[ii]TE[1])
+(;B[ih];W[hi]
+(;B[ii];W[if])
+(;B[gi];W[gc]
+;B[ii]TE[1])))
+(;B[hh];W[ig]
+(;B[ih];W[hd]
+(;B[if]TE[1])
+(;B[gc];W[ie]))
+(;B[if];W[hd];B[ih]))))))

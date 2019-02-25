@@ -1,0 +1,11 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AB[ah][bi][ch][bh][ci][cg][dg][ei][fi][fh]AW[af][bf][cf][df][eg][fg][gh][gi][gf][di]C[Looks like a dire situation for black.
+White's D1 id falsifying your eye. Is there still a way to save your group? (wouldn't ask if there wasn't...)]
+(;B[dh]
+;W[eh]C[You can capture, yeah, but now your stones are in atari and you have just one eye. The whole group dies.])
+(;B[eh]
+;W[dh]C[What a weird move. Ugly shape and self-atari at once. And yet, it is the only correct move.
+White captures.]
+(;B[eh];W[ei]
+;B[fi]TE[1]C[But there is now enough room and a handy cut to recapture and 
+get an eye.])
+(;B[ei];W[eh])))

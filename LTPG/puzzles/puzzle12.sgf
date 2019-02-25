@@ -1,0 +1,13 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AW[ed][de]AB[fe][ee]C[This is the classic "CUT NOW" shape. You have two solidly connected stones with lots of room. White has two lone stones. Prevent them from ever connecting. It should be good for you.]
+(;B[dd];W[cd]
+;B[dc]TE[1]C[When you cut something the first thing to expect is that 
+your cutting stone will get in atari (although it is often not the 
+best move for your opponent) so you need to be sure, that the 
+stone can escape.])
+(;B[fd];W[dd])
+(;B[dc];W[dd])
+(;B[cc];W[dd])
+(;B[cd];W[dd])
+(;B[df];W[dd])
+(;B[cf];W[dd])
+(;B[fc];W[dd]))

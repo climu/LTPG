@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+    
+	<script type="text/javascript" src="wgo/wgo.js"></script>
+	<script type="text/javascript" src="wgo/kifu.js"></script>
+	<script type="text/javascript" src="wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="wgo/player.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.component.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.infobox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.commentbox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
+	<script type="text/javascript" src="wgo/player.editable.js"></script>
+	<script type="text/javascript" src="wgo/scoremode.js"></script>
+	<script type="text/javascript" src="wgo/player.permalink.js"></script>
+	<script type="text/javascript" src="tsumego.js"></script>
+	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+    
+    
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| No Repetition ("ko" rule)</div>
+      <div class="podnadpis">No repetition ever</div><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+    
+<!-- FLAVOUR -->
+<div class="flavour"><hr>Full disclosure - this is a rule that may confuse you at first. But it is not as complicated as it may first seem. I for one (although many would disagree) think that a good ko fight is 
+one of the most fun things you can have in a go game.<hr></div>
+<!-- END OF FLAVOUR -->
+
+
+    <div class="text" style="">
+
+
+
+
+
+<!-- RULES -->
+<b>Go games can take a long time. But must not ever be endless. To prevent the possibility of an endless game we have a rule, called ko.</b><br><br><br>
+
+Just imagine a situation like this one. Given enough stubborness, those players would be playing until they pass out. (feel free to watch for a while)<br><br><br>
+<img src="images/ko.gif" alt="liberties.jpg, 98kB" title="liberties" border="0" height="392" width="391"><br>
+To prevent health problems connected with total fatigue we have this rule:<br><br>
+
+<div class="podnadpis2"></span>A completely identical board position <span class="black">must not</span> appear twice in one game.</div><br>
+<div class="podnadpis2"></span>Therefore, before you can recapture a stone that just captured yours, you have to <span class="black">play elsewhere once</span></div><br>
+
+Now that we have established that you cannot immediately recapture a stone that just captured yours (The board would be exactly the same as before and that is prohibited). What are your options then?
+Basically you have two:<br><br>
+<span class="black">1.</span> You deem the stone not important and play elsewhere, letting your opponent end the ko by connecting his endangered stone if he wants to.<br>
+<span class="black">2.</span> You deem the stone important enough to fight the ko. You still have to play elsewhere (of course) but you try to find a move your opponent will feel compelled to respond to locally (we call that a ko-threat).
+<br><br>
+<i>Confusing? Then check out the follwoing example, it will be clear in no time.</i><br><br>
+
+<!-- TSUMEGOS -->
+<div style="text-align: center;">
+<div class="tsumego" id="tsumego_wrapper" style="text-align: left;">
+Your browser sucks. Download something up to date.
+</div>
+
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgf: "(;FF[4]GM[1]VW[aa:jj]SZ[9]ST[2]EV[N° 1 .|. Level #2]AB[bg][ch][dg][hc][hb][ga][fb]AW[dh][eg][df][eh][gb][gc]C[Play at C4 to give white the chance to start a ko.];B[cf];W[cg]C[White captures. Now, because of the ko rule, you cannot take back immediately. But say you really want that pesky white stone. Threaten something else white has, so he feels the need to respond.](;B[fc];W[gd]C[White decided that the two stones are more important than finishing the ko right now, and responds to your threat. Now you can recapture the ko.];B[dg]C[Amazing! By threatening to capture two stones, you forced white to respond and got a chance to retake. Now it is white who has to play elsewhere once!]TE[1])(;B[gd];W[fc]C[White decided that the two stones are more important than finishing the ko right now, and responds to your threat. Now you can recapture the ko.];B[dg]C[Amazing! By threatening to capture two stones, you forced white to respond and got a chance to retake. Now it is white who has to play elsewhere once!]TE[1])(;B[fd];W[gd]C[White decided that the two stones are more important than finishing the ko right now, and responds to your threat. Now you can recapture the ko.];B[dg]C[Amazing! By threatening to capture two stones, you forced white to respond and got a chance to retake. Now it is white who has to play elsewhere once!]TE[1]))",
+	/*debug: true, /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+</div>
+<br><br>
+<!-- END OF TSUMEGOS -->
+
+<div class="alert">The hard part - of course - is judging if the threat is big enough to respond to, or whether it is more beneficial to end the ko. But hey, I said the rules are easy, not the game itself.</div><br><br> 
+<!-- END OF RULES -->
+
+
+
+
+
+  <br><br><br><br>
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#rules');setCookie('4', '1', '14')">EZ, <span class="black">I got this, </span>what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>

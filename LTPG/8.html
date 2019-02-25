@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+    
+	<script type="text/javascript" src="wgo/wgo.js"></script>
+	<script type="text/javascript" src="wgo/kifu.js"></script>
+	<script type="text/javascript" src="wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="wgo/player.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.component.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.infobox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.commentbox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
+	<script type="text/javascript" src="wgo/player.editable.js"></script>
+	<script type="text/javascript" src="wgo/scoremode.js"></script>
+	<script type="text/javascript" src="wgo/player.permalink.js"></script>
+  <script type="text/javascript" src="tsumego.js"></script>
+    <script type="text/javascript" src="js/tsumegos.js"></script>
+	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+    
+    
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| Double Atari</div>
+      <div class="podnadpis">One atari is nice, but two ataris at once? Now that's something</div><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+    
+<!-- FLAVOUR -->
+<div class="flavour"><hr>I promised you some tips on capturing things. Well this is one of them. :)<hr></div>
+<!-- END OF FLAVOUR -->
+
+
+    <div class="text" style="">
+<!-- RULES -->
+<b>The idea is very simple. If you atari a stone, your opponent (unless he's blind) can usually save it. However, if you atari two different stones with one move, 
+well then your opponent can save only one and you get to eat the other.</b><br>
+
+
+ 
+<br><br><br> 
+
+
+<!-- TSUMEGOS -->
+
+<div style="text-align: center; min-height: 750px; vertical-align: top;">
+<button class="bttn-selected" onclick="loadTsumego('puzzle9', 'pzl1')" id="pzl1">Puzzle 1</button>
+<button class="bttn" onclick="loadTsumego('puzzle10', 'pzl2')" id="pzl2">Puzzle 2</button>
+<button class="bttn" onclick="loadTsumego('puzzle11', 'pzl3')" id="pzl3">Puzzle 3</button>
+<br><br>
+<div class="tsumego" id="tsumego_wrapper" style="text-align: left;">
+
+Your browser sucks. Download something up to date.
+</div>
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgfFile: "puzzles/puzzle9.sgf",
+	/*debug: true, /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+</div>
+
+<!-- END OF TSUMEGOS -->
+
+This was an easy one, but good to keep in mind whether attacking or defending. I always caution beginners about three diagonal moves (double hane).<br>
+
+<br>
+<img src="images/doublehane.jpg" alt="doublehane.jpg, 137kB" title="doublehane" border="0" height="489" width="486">
+<br>
+It has a tendency of getting cut apart when not protected. However, DO NOT disregard that move completely. Once you learn to read out the cuts it can be a very powerfull move when applied correctly. Just do it only if you know what will happen when opponent cuts :).
+
+</div><br><br> 
+<!-- END OF RULES -->
+
+
+
+
+
+  <br><br><br><br>
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#techniques');setCookie('8', '1', '14')">EZ <span class="black">, I got this</span>, what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>

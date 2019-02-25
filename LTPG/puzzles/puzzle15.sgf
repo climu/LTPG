@@ -1,0 +1,25 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AB[ee]AW[ed][dd][fe][ef]C[It is easy. Your stone is in atari, save it.];B[de]
+;W[ce]C[Oh no, atari again, quickly, save them.];B[df]
+;W[dg]C[Ooops, now it is three stones in atari? (See the pattern emerging?) Save them.];B[cf]
+;W[bf]C[Keep going];B[cg]
+;W[ch]C[Almost there, keep saving them, can't give up now.];B[bg]
+;W[bh]C[huh a different move to spice things up? This might be your chance];B[ag]
+;W[ah]C[ummmm you are in atari again...]
+(;B[af]
+;W[ae]TE[1]C[Yeah, there was no way to save that stone. Every move just 
+kept making it worse.])
+(;B[be]
+;W[af]TE[1]C[Yeah, there was no way to save that stone. Every move just 
+kept making it worse.])
+(;B[cd]
+;W[af]TE[1]C[Yeah, there was no way to save that stone. Every move just 
+kept making it worse.])
+(;B[ff]
+;W[af]TE[1]C[Yeah, there was no way to save that stone. Every move just 
+kept making it worse.])
+(;B[eg]
+;W[af]TE[1]C[Yeah, there was no way to save that stone. Every move just 
+kept making it worse.])
+(;B[dh]
+;W[af]TE[1]C[Yeah, there was no way to save that stone. Every move just 
+kept making it worse.]))

@@ -1,0 +1,42 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[19]L[qc][pd][qd][pe][qe][jj][dp]C[On 19x19 we always (well almost) start at a corner. Upper right being the traditional "polite" move.
+
+Wanna know why corner? Click G to find out. Otherwise try out A-F which are the most common opening moves.]
+(;B[qc]C[The san-san (3-3) stone.
+
+It was the traditional starting move a long time ago. Now it is a little out of fashion, but you can still see it every now and then.
+
+This stone secures only a small ammount of territory in the corner (being so close), but is super safe. You do not have to worry about this stone and concentrate on attacking/doing something else.];W[pd];B[qd];W[pe];B[ob]
+;W[md]C[One of the possible follow ups. White forces black to take a small corner and hopes for a bigger compensation towards side and center])
+(;B[pd]C[The hoshi (star point) stone.
+
+A fairly modern move, that does not guarantee any points in the corner (opponent can invade 3-3 and live easily). It is saying, I will either get a huge corner, or get enough compensation on the outside to make up for it. If you are a more influence (big center moyo) oriented player this move is for you. "click next to see the 3-3 invasion"];W[qc]
+;B[pc]C[Black will block from either side];W[qd]C[This is only one of the possible variations...];B[qe];W[re]
+;B[qf]C[In special cases black can double hane here];W[rf]
+;B[qg]C[White is already alive and can play elsewhere if she/deems it more important])
+(;B[qd]C[The 3-4 (famous Shusaku opening move) is sort of a compromise between the 3-3 and 4-4
+
+Saying I want a moderate ammount of territory in the corner, but I want to have some influence on the center as well.])
+(;B[pe]C[These moves are also not THAT popular, but still playable. A very center oriented opening. Black is unlikely to get anything in the corner.])
+(;B[qe]C[Quite similar to D but threatening a big corner should white not act soon.])
+(;B[jj]C[Tengen (center point) is often laughed at as "I don't know what I am doing" move, but it can have it's perks and was also seen in proffesional games at some point.
+
+It is the move should black want to play mirror go, and also can be beneficial for "fighting style" as most ladders will now be good for black (the black stone is a ladder breaker for any ladder headed to the center)])
+(;B[dp]C[The first reason to start in a corner is efficiency. You want to secure as much territory as quickly as possible. "Click next"];AE[qj]AB[os][or][oq][op][qo][po][ro][so][rj][sj][qi][qh][qg][qf][re][se]
+[kj][kk][ll][ml][nj][nk][li][mi]C[Check it out. This is cool to realize. All these territories were made by 8 stones. And you can clearly see that in the corner black surrounded 16 points 8 on the side and only 4 in the center.
+
+Now that is not to say that there is not much points to make in the center. Center is a big open area. But you cannot try surrounding it "out of nowhere". If you want points in the center, you need to build them up gradually by putting pressure on your opponent.
+
+"Click next"];W[do]C[The second reason is strength. In the corner it is easiest to settle a group (make it live) should anything go bad. And it is much easier to attack other groups if you do not have to worry about your group dying.
+
+"Click next"];AE[nj][li][mi][op][oq][or][os][po][qo][ro][so][re][se][qf][qg][qh]
+[qi][rj][dh][bi][aj][ah][di][nk][jk][lk][nl][nm][mm][gf][gh][hh]
+[ig][jg][jh][ji][ii][kl][jn][lo][mo][mn][ko][ln][kn]AB[sr][sq][rq][qr][qs][rs][qa][qb][rb][rc][sc][sa][ab][bb][cb][db]
+[da][ba][ha][hb][ib][jb][kb][lb][la][ja][sh][rh][ri][sj][sk][rk]
+[qk][qj][bh][ch][bj][cj][ai][ci][bk][ak][en][fn][fo][go][gp][do]
+[dp][ep][eq][fq][ed][ee][ef][ff][fd][ge][he][hf][hg][gg][ld][me]
+[nf][kd][ke][kf][lf][lg][mg][ng][jl][jm][km][lm][ll][ml][mk][lj]
+[kj][kk]C[Check the examples of immortal groups with the least moves possible.
+
+It's 6 stones in a corner, 
+8 on the side, 
+and 10 in the center]))

@@ -1,0 +1,20 @@
+(;GM[1]FF[4]AP[Drago:4.23]SZ[19]CA[UTF-8]C[This is one of the most basic corner situations. Black took a corner and white chose the traditional approach.]AB[pd]AW[qf];B[qe]C[We have already established that corners are super big. Therefore this move seems to make sense! You are protecting your corner, enlarging it a bit and attack white's stone all at the same time, right? RIGHT?];W[pf]C[Wrong. You did not atack white's stone, you forced it to make strong shape.];B[nc]C[ But still, you protected and enlarged your corner, right? Right?];W[pj]C[Well. Not really. Believe it or not at this point black still needs another move in the corner to make it safe. That's four stones in one corner while white gets influence elsewhere and ends in sente. If black does not spend another move...];B[dd]
+;W[qc]LB[rf:C]C[White can LATER invade like this. Black has several options I will list just the major ones. 
+
+Admit the weakness and stay safe at A
+Try to fight it at B
+C is also playable, but it is usually special strategy to spread the fight elsewhere]
+(;B[pc];W[re];B[rd]
+;W[qd]C[A is simple and safe
+B is fancy and keeps more in the corner]
+(;B[pe]
+;W[rc]C[Black's corner is ruined.])
+(;B[rc]
+;W[pe]C[White has to take now];B[qb]C[White will usually tenuki, unless late endgame.
+Black kept some of the corner, white has sente.]))
+(;B[re]C[From here the variations are almost limiteless, but usually end with white alive or big problems for black (ko). All this in what was supposed to be black's corner. That's one of the reasons why we often avoid the kick.];W[pc]
+(;B[od];W[nb];B[mb];W[ob];B[mc]
+;W[rd]C[Aaand white is pretty alive. Again, this is just one of the simpler variations, black can try many things. But there are always some problems.])
+(;B[oc]C[Black can't really afford to play here];W[od]
+;B[oe]C[Ladder?];W[pe]C[Now the ladder does not work anymore];B[nd]C[But if black captures.];W[qd]C[White cuts off the two stones.
+See what I mean about the trouble?])))

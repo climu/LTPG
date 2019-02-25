@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+    
+	<script type="text/javascript" src="wgo/wgo.js"></script>
+	<script type="text/javascript" src="wgo/kifu.js"></script>
+	<script type="text/javascript" src="wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="wgo/player.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.component.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.infobox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.commentbox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
+	<script type="text/javascript" src="wgo/player.editable.js"></script>
+	<script type="text/javascript" src="wgo/scoremode.js"></script>
+	<script type="text/javascript" src="wgo/player.permalink.js"></script>
+	<script type="text/javascript" src="tsumego.js"></script>
+	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+    
+    
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| There Are No Suicides in Go</div>
+      <div class="podnadpis">How nice, huh?</div><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+    
+<!-- FLAVOUR -->
+<div class="flavour"><hr>This one is super easy. You will breeze trough it like nothing, and soon you will play a real game!<hr></div>
+<!-- END OF FLAVOUR -->
+
+
+    <div class="text" style="">
+
+
+
+
+
+<!-- RULES -->
+<b>It's simple. You must not (nor really want to) kill your own stones. But there is a reason why I am even telling you this...</b><br><br><br>
+
+<div class="podnadpis2"></span>A stone that would have <span class="black">no liberties</span> (or fill the last liberty of your group) must not be placed.</div><br>
+<div class="podnadpis2"></span><span class="black">Unless</span> the very same move captures something. In that case it is allowed (because the capture gives you at least one liberty).</div><br>
+
+<!-- TSUMEGOS -->
+<div style="text-align: center;">
+<div class="tsumego" id="tsumego_wrapper" style="text-align: left;">
+Your browser sucks. Download something up to date.
+</div>
+
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgf: "(;FF[4]GM[1]VW[aa:jj]SZ[9]ST[2]EV[N° 1 .|. Level #2]AB[gg][gh][gi][hh][hi][ig][ih][ii][ga][gb][gc][hc][ic]AW[cb][bc][dc][cd][ff][fg][fh][fi][gf][hf][if][ha][hb][ib]C[Like here. You must not place a stone at A, or B. However, you can place a stone at C, because you capture something with that move. Try it.]FG[1](;B[cc]C[Correct!])(;B[hg]C[Yes! Simple.])(;B[ia]C[Feels good, right?]TE[1])1",
+	debug: true, /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+</div>
+<br><br>
+<!-- END OF TSUMEGOS -->
+
+<div class="alert">And because there can never be a stone without a liberty it is possible to create an "immortal" group. But don't worry if you can't imagine how right now, it is a topic for later :).</div><br><br> 
+<!-- END OF RULES -->
+
+
+
+
+
+  <br><br><br><br>
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#rules');setCookie('3', '1', '14')">EZ, <span class="black"> I got this, </span>what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]C[Is white really safe?]AB[df][bd][bc][cc][dc][ec][fc][fd][ge][gf][gg][gh][fh]AW[cd][dd][ed][fe][ff][fg][be][cf][dg][eh]
+(;B[ee]
+;W[eg]C[White can't atari those stones from either side, as it would be self atari. Connecting seems the strongest option.]
+(;B[de]
+;W[ce]C[No])
+(;B[ef]
+;W[de]C[What?])
+(;B[ce];W[de]
+;B[ce]C[Magic!]TE[1]))
+(;B[ef];W[ee]
+(;B[ce];W[eg])
+(;B[eg];W[de]))
+(;B[de];W[ee];B[ce];W[ef]))

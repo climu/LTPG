@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style_mob.css">  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet"> 
+  <script src="js/main.js"></script>
+  
+  
+<style>
+body{
+background-image:  url(images/1.jpg), url(images/pattern.png);
+background-position: center top, center left;
+background-repeat: no-repeat, repeat;
+}
+</style>
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+<body onload="checkCookies()">
+              <a href="" onclick="reset()" style="position: absolute; top: 10px; right: 15px; color: rgba(0,102,20,0.3);"><b>Reset all progres</b></a>
+<!-- NAVBAR -->
+    <div class="obal" style="position: relative; height: 500px; max-width: 1024px;">
+          <noscript>
+            <span style="margin: 0 auto; background: rgb(255,102,0); padding: 10px; font-weight: bold;">This site is too complicated to work without javascript. Please turn it on. There are no trackers or anything nasty here.</span> 
+          </noscript>
+           
+
+              <div class="title" style="">Learn to Play Go Already!</div>
+              <div style="text-align: right; color: rgba(0,102,20,0.3); margin-right: 20px; font-weight: 900;"><i>a loving homage to the original <a href="http://www.playgo.to/iwtg/en/" target="_blank">"Interactive Way to Go"</a></i></div>
+
+
+
+          <div class= "nav" style="">
+              <a href="#rules">Basic Rules</a><br>
+              <a href="#techniques">Basic (but cool) techniques</a><br>
+              <a href="#strategies">Basic Strategies</a><br><br>
+              
+              <a href="#what_now">I think I can play, Now What?</a><br><br>
+              
+
+          </div>
+    </div>
+<!-- END OF NAVBAR -->
+
+
+
+
+
+<!-- BASIC RULES -->
+    <div id="rules" class="obal">
+      <div class="nadpis">| Basic rules</div>
+      <div class="podnadpis">Just 5 simple steps, nothing to be scared about</div><br><br><br>
+
+    <div id="progressbar" class="button-grey" onclick="learn()">Learn them <span class="black">all</span> one by one</div><br>    
+
+        <a href="1.html" class="button-blue" id="1" style="background-image: url(images/where.png); background-repeat: no-repeat"> <span class="black">WHERE</span> and <span class="black">HOW</span> we place the stones</a>
+        <a href="2.html"  class="button-blue" id="2" style="background-image: url(images/atari.png); background-repeat: no-repeat">How can we <span class="black">CAPTURE</span> something?</a>
+        <a href="3.html"  class="button-blue" id="3" style="background-image: url(images/suicide.png); background-repeat: no-repeat">No  <span class="black">SUICIDES</span> please</a>
+        <a href="4.html"  class="button-blue" id="4" style="background-image: url(images/endless.png); background-repeat: no-repeat">No <span class="black">ENDLESS REPETITION</span> either</a>
+        <a href="5.html"  class="button-blue" id="5" style="background-image: url(images/pass.png); background-repeat: no-repeat"><span class="black">PASS</span> and <span class="black">COUNT</span> the score</a>
+        
+    </div><br><br>
+<!-- END OF BASIC RULES -->
+
+
+<!-- BASIC TECHNIQUES -->
+    <div id="techniques" class="obal">
+      <div class="nadpis">| Basic (but cool!) techniques</div>
+      <div class="podnadpis">You know how to play? Now learn to play with style!</div><br><br><br>
+
+    <div id="progressbar2" class="button-grey" onclick="learn2()">Learn them <span class="black">all</span> one by one</div>    
+
+        <a href="6.html" class="button-blue" id="6" style="background-image: url(images/alive.png); background-repeat: no-repeat">Alive<span class="black"> (IMMORTAL)</span> groups</a>
+        <a href="7.html" class="button-blue" id="7" style="background-image: url(images/cuts.png); background-repeat: no-repeat"><span class="black">CUTS</span></a>
+        <a href="8.html" class="button-blue" id="8" style="background-image: url(images/double.png); background-repeat: no-repeat"><span class="black">DOUBLE</span> atari!</a>
+        <a href="9.html" class="button-blue" id="9" style="background-image: url(images/ladder.png); background-repeat: no-repeat"><span class="black">LADDERS</span></a>
+        <a href="10.html" class="button-blue" id="10" style="background-image: url(images/net.png); background-repeat: no-repeat"><span class="black">NETS</span></a>
+        <a href="11.html" class="button-blue" id="11" style="background-image: url(images/snapback.png); background-repeat: no-repeat"><span class="black">SNAPBACK</span></a>
+        <a href="12.html" class="button-blue" id="12" style="background-image: url(images/seki.png); background-repeat: no-repeat"><span class="black">SEKI (barely alive)</span></a>
+        <a href="12_and_a_half.html" class="button-blue" id="gold" style="background-image: url(images/under.png); background-repeat: no-repeat; background: rgba(255, 204, 0, 0.2); display: none;">Playing <span class="black">UNDER </span> the stones</a>
+    </div><br><br>
+<!-- END OF BASIC TECHNIQUES -->
+
+<!-- BASIC STRATEGIES -->
+    <div id="strategies" class="obal">
+      <div class="nadpis">| Basic strategies</div>
+      <div class="podnadpis">Switching to 19x19</div><br><br><br>
+
+    <div id="progressbar3" class="button-grey" onclick="learn()">Learn them <span class="black">all</span> one by one</div>    
+
+        <a href="13.html" class="button-blue" id="13" style="background-image: url(images/where.png); background-repeat: no-repeat">What to do in the <span class="black">OPENING</span></a>
+        <a href="14.html"  class="button-blue" id="14" style="background-image: url(images/atari.png); background-repeat: no-repeat">Is <span class="black">ENDGAME</span> important?</a>
+        <a href="15.html"  class="button-blue" id="15" style="background-image: url(images/atari.png); background-repeat: no-repeat">Make some <span class="black">SHAPE</span></a>        
+        <a href="16.html"  class="button-blue" id="16" style="background-image: url(images/suicide.png); background-repeat: no-repeat">Beginner <span class="black">TIPS</span> please</a>
+        <a href="17.html"  class="button-blue" id="17" style="background-image: url(images/suicide.png); background-repeat: no-repeat">Understand a <span class="black">PROFESSIONAL</span> game</a>
+        
+    </div><br><br>
+<!-- END OF BASIC STRATEGIES -->
+
+
+<!-- WHAT NOW? -->
+    <div id="what_now" class="obal">
+      <div class="nadpis">| Well, now what?</div>
+      <div class="podnadpis">Where can you even use this newfound skill?</div><br><br><br>
+
+    <div id="progressbar4" class="button-grey" onclick="learn()">Learn them <span class="black">all</span> one by one</div>    
+
+        <a href="18.html" class="button-blue" id="18" style="background-image: url(images/where.png); background-repeat: no-repeat">Where can you <span class="black">PLAY</span>?</a>
+        <a href="19.html"  class="button-blue" id="19" style="background-image: url(images/atari.png); background-repeat: no-repeat">Where can you <span class="black">LEARN</span> more?</a>
+        <a href="20.html"  class="button-blue" id="20" style="background-image: url(images/suicide.png); background-repeat: no-repeat">Where can you <span class="black">ASK QUESTIONS</span>?</a>
+        <a href="21.html"  class="button-blue" id="21" style="background-image: url(images/suicide.png); background-repeat: no-repeat"><span class="black">DICTIONARY</span> of Go terms</a>
+        
+    </div><br><br>
+<!-- END OF WHAT NOW -->
+
+</div>
+
+
+  </body>
+</html>

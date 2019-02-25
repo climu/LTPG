@@ -1,0 +1,14 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AB[ab][bb][cb][db][da]AW[ac][bc][cc][dc][eb][ea][fc]C[Let's start slowly again. Your group is in trouble, but there is still time to save it! Do it now.]
+(;B[ba]L[aa][ca]C[Nothing white can do now :) good job.]TE[1])
+(;B[aa]
+;W[ba]C[Now what?];B[ca]
+;W[ba]C[Yeah...])
+(;B[ca]
+;W[ba]C[Now what?];B[aa]
+;W[ba]C[Yeah...])
+(;B[ec]C[What are you trying you sneaky sneaker?];W[ba];B[fb];W[ed];B[fa]
+;W[ec]C[Huh, did not work out so well, did it? Now you group is dead])
+(;B[ed]C[What are you trying you sneaky sneaker?];W[ba];B[ec]
+;W[ca]C[ATARI!];B[aa];W[ba]
+(;B[fb];W[ca])
+(;B[ca];W[ba])))

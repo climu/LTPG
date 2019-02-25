@@ -1,0 +1,20 @@
+(;GM[1]FF[4]AP[Drago:4.23]CA[UTF-8]SZ[9]AB[ag][bg][dg][ed][de][hg][ig][gh][cf][ee][fe][ge][hd][gf]AW[dd][ec][ce][be][ae][bc][fd][gd][hc][ic][he][ie][bb]C[White is winning, but his border sure does not seem bulletproof. This time you have to set it up a little.]
+(;B[dc]
+;W[cd]C[Great start. Now for the finishing blow.];B[fc];W[gc]
+;B[eb]C[White is devastated.]TE[1])
+(;B[fc]
+;W[gc]C[Great start. Now for the finishing blow.]
+(;B[dc];W[fb]
+;B[cd]C[White is devastated.]TE[1])
+(;B[fb]
+;W[dc]C[Oh no, this gave white time to fix. You should have sacrificed the one stone for much bigger gain.]))
+(;B[cd];W[dc]
+(;B[fc]
+;W[gc]C[Nope, that just solidified white.])
+(;B[gc]
+;W[fc]C[Nope, that just solidified white.]))
+(;B[gc];W[fc]
+(;B[cd]
+;W[dc]C[Nope, that just solidified white.])
+(;B[dc]
+;W[cd]C[Nope, that just solidified white.];B[fb];W[gb];B[eb];W[gc])))
