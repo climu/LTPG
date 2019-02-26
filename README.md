@@ -4,3 +4,5 @@ The Learn to Play Go is intended as a modern interactive website for beginners t
 Ideally it would serve as sort of a HUB for any new player to find his way to what he needs as the knowledge seems to be spread all over the internet.
 
 The website runs on a simple .html, .css, and horrible .js + JGoBoard.js and WGo.js libraries
+
+Test it on http://adamruzicka.cz/go/
