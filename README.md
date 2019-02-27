@@ -5,4 +5,7 @@ Ideally it would serve as sort of a HUB for any new player to find his way to wh
 
 The website runs on a simple .html, .css, and horrible .js + JGoBoard.js and WGo.js libraries
 
-Test it on http://adamruzicka.cz/go/
+Test it on https://climu.github.io/LTPG/LTPG/
+
+
+### This is a work in progress, some of the texts and puzzles are a bit half-assed, currently I am more concerned about some of the technical issues.
