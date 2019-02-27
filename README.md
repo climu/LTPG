@@ -9,3 +9,7 @@ Test it on https://climu.github.io/LTPG/LTPG/
 
 
 ### This is a work in progress, some of the texts and puzzles are a bit half-assed, currently I am more concerned about some of the technical issues.
+
+## Interactive puzzles
+For the puzzles I am using a WGoBoard extension https://github.com/waltheri/wgo.js/tree/master/extensions/tsumego
+The puzzles themselves are loaded externally from /puzzles directory.
