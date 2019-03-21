@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>  
+  <head>  
+    <meta charset="windows-1250">  
+    <meta name="description" content="">  
+    <title>Learn to play Go already</title>
+    
+	<script type="text/javascript" src="wgo/wgo.js"></script>
+	<script type="text/javascript" src="wgo/kifu.js"></script>
+	<script type="text/javascript" src="wgo/sgfparser.js"></script>
+	<script type="text/javascript" src="wgo/player.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.component.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.infobox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.commentbox.js"></script>
+	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
+	<script type="text/javascript" src="wgo/player.editable.js"></script>
+	<script type="text/javascript" src="wgo/scoremode.js"></script>
+	<script type="text/javascript" src="wgo/player.permalink.js"></script>
+  <script type="text/javascript" src="tsumego.js"></script>
+    <script type="text/javascript" src="js/tsumegos.js"></script>
+	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+	<!--link rel="stylesheet" type="text/css" href="../../wgo/wgo.player.css" -->
+	<link rel="stylesheet" type="text/css" href="tsumego.css">
+    
+    
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style_mob.css">  
+          <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&amp;subset=latin-ext" rel="stylesheet">
+          <script type="text/javascript" src="js/main.js"></script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+    
+  <body>
+    <div id="" class="obal">
+  
+      <a href="index.html#rules"><div  class="button-grey">This is not what I wanted, take me <span class="black">BACK</span></div></a>
+
+
+<!-- NADPIS A PODNADPIS -->
+      <div class="nadpis">| Shape (WARNING, PAGE VERY MUCH UNDER CONSTRUCTION AND CONFUSING)</div>
+      <div class="podnadpis">Now even your stones need to be in shape</div><br><br><br>
+<!-- END OF NADPIS A PODNADPIS -->
+    
+<!-- FLAVOUR -->
+<div class="flavour"><hr>Okay, ladders. They are the bread and butter of every serious go player. They are everywhere! The idea is simple, but training your mind to seeing them everywhere takes time. But seriously,
+understand ladders or go home. It's the difference between killing and being killed. 
+<hr></div>
+<!-- END OF FLAVOUR -->
+
+
+    <div class="text" style="">
+<!-- RULES -->
+Any stronger player minds the shape of his groups. By shape we understand the formations a group of your stones has and the relation between them.<br><br>
+<b>A good shape should do some of the following:</b><br><br>
+<div class="podnadpis2">Maintain a <span class="black">connection</span>  (because it is always easier to have to take care of one group instead of two)</div><br>
+<div class="podnadpis2">Be <span class="black">efficient</span>  (you want the best possible effect with the least possible ammount of moves)</div><br>
+<div class="podnadpis2">Create <span class="black">Eye potential</span>  (so you can live easily)</div><br>
+<div class="podnadpis2">Maximize <span class="black">Liberties</span>  (so you can win capture races)</div><br>
+
+<br><br><br> 
+
+
+<!-- TSUMEGOS -->
+
+<div style="text-align: center; min-height: 750px; vertical-align: top;">
+<button class="bttn-selected" onclick="loadTsumego('puzzle15', 'pzl1')" id="pzl1">Puzzle 1</button>
+<button class="bttn" onclick="loadTsumego('puzzle16', 'pzl2')" id="pzl2">Puzzle 2</button>
+<button class="bttn" onclick="loadTsumego('puzzle17', 'pzl3')" id="pzl3">Puzzle 3</button>
+<br><br>
+<div class="tsumego" id="tsumego_wrapper" style="text-align: left;">
+
+Your browser sucks. Download something up to date.
+</div>
+
+<script>
+var tsumego = new WGo.Tsumego(document.getElementById("tsumego_wrapper"), {
+	sgfFile: "puzzles/puzzle15.sgf",
+	/*debug: true, /* remove this line hide solution */
+});
+tsumego.setCoordinates(true);
+</script>
+</div>
+
+<!-- END OF TSUMEGOS -->
+Ladder is a situation where a stone (or group) can never get more than one new liberty. Meaning your opponent can keep atariing it until it hits a wall or ranother stone.
+And that's it. But I can't stress enough how improtant the ladders are. You have to see a ladder before it comes to it. And misreading a ladder usually means something will die. 
+<br><br>
+<div class="alert">If you wanna practice ladders just set up the starting shape on a board. And then take handfull of stones and throw them softly in the direction of the ladder. Then try and read out whether the ladder works or not before playing it out.</div>
+
+</div><br><br> 
+<!-- END OF RULES -->
+
+
+
+
+
+  <br><br><br><br>
+  <a href="index.html#rules"><div class="bad" onclick="">Actually, let me get <span class="black">back</span> to this one later</div></a>
+  <div class="good" onclick="myFunction('index.html#techniques');setCookie('9', '1', '14')">EZ <span class="black">, I got this</span>, what's next?</div> 
+   
+    
+    </div><br><br>
+
+    </div>
+  </body>
+</html>
